@@ -7,7 +7,7 @@
 
 ### Benadering van de oplossing
 - Voor het in de wachtrij zetten van de taken, kan ik het beste de datastructuur queue gebruiken. Het werkt volgens FIFO, first in first out, de taken worden bij deze structuur op volgorde van toevoeging geplaatst.
-- Om de taken parallel van elkaar te laten lopen kan ik gebruik maken van threading. Elke taak wordt dan door een thread uitgevoerd.  Verschillende uitvoertijden kunnen worden gesimuleerd door de threads voor een bepaalde tijd in slaap te zetten
+- Om taken gelijktijdig te laten lopen, kan ik gebruik maken van threading. Elke taak wordt dan door een thread uitgevoerd.  Verschillende uitvoertijden kunnen worden gesimuleerd door de threads voor een bepaalde tijd in slaap te zetten
 - Om drie taken tegelijk uit te voeren, kan ik een groepje maken van drie threads waar de taken worden uitgevoerd.
 
 ### Pseudo code
@@ -47,5 +47,5 @@ BlockingQueue als Queue datastructure implementatie:
 
 ExecutorService voor thread management 
 - Ingebouwd thread pool mechanisme. Zorgt ervoor dat er niet meer threads worden aangemaakt dan nodig. Kan op max 3 worden gezet zodat er altijd maar drie threads zijn die taken uitvoeren.
-- Handelt parallel uitvoering automatisch af
-- Voorkomt de complexiteit van eigen thread implementatie
+- Handelt parallele uitvoering automatisch af
+- Voorkomt de complexiteit van eigen thread beheer implementatie
